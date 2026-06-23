@@ -1,88 +1,90 @@
-Machine Learning Notebooks, 3rd edition
-=================================
+Notebooks de Machine Learning, 3ª edição
+=========================================
 
-This project aims at teaching you the fundamentals of Machine Learning in
-python. It contains the example code and solutions to the exercises in the third edition of my O'Reilly book [Hands-on Machine Learning with Scikit-Learn, Keras and TensorFlow (3rd edition)](https://homl.info/er3):
+Este projeto tem como objetivo ensinar os fundamentos de Machine Learning em
+Python. Ele contém os códigos de exemplo e as soluções dos exercícios da terceira edição do livro [Hands-on Machine Learning with Scikit-Learn, Keras and TensorFlow](https://homl.info/er3), de Aurélien Géron:
 
-<a href="https://homl.info/er3"><img src="https://learning.oreilly.com/library/cover/9781098125967/300w/" title="book" width="150" border="0" /></a>
+<a href="https://homl.info/er3"><img src="https://learning.oreilly.com/library/cover/9781098125967/300w/" title="livro" width="150" border="0" /></a>
 
-**Note**: If you are looking for the second edition notebooks, check out [ageron/handson-ml2](https://github.com/ageron/handson-ml2). For the first edition, see [ageron/handson-ml](https://github.com/ageron/handson-ml).
+**Observação**: se você procura os notebooks da segunda edição, acesse [ageron/handson-ml2](https://github.com/ageron/handson-ml2). Para a primeira edição, consulte [ageron/handson-ml](https://github.com/ageron/handson-ml).
 
-## Repository structure
+## Estrutura do repositório
 
-The notebooks and their images are in [`notebooks/`](notebooks/), the supporting documentation is in [`docs/`](docs/), and the Docker setup remains in [`docker/`](docker/). Start with [`notebooks/index.ipynb`](notebooks/index.ipynb).
+Os notebooks e suas imagens estão em [`notebooks/`](notebooks/), a documentação complementar está em [`docs/`](docs/) e a configuração do Docker permanece em [`docker/`](docker/). Comece por [`notebooks/index.ipynb`](notebooks/index.ipynb).
 
-## Quick Start
+## Início rápido
 
-### Want to play with these notebooks online without having to install anything?
+### Quer experimentar os notebooks online sem instalar nada?
 
-* <a href="https://colab.research.google.com/github/andreluizpedroso/handson-ml3/blob/main/notebooks/index.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> (recommended)
+* <a href="https://colab.research.google.com/github/andreluizpedroso/handson-ml3/blob/main/notebooks/index.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Abrir no Colab"/></a> (recomendado)
 
-⚠ _Colab provides a temporary environment: anything you do will be deleted after a while, so make sure you download any data you care about._
+⚠ _O Colab oferece um ambiente temporário: tudo o que você fizer será apagado após algum tempo. Baixe os dados que deseja preservar._
 
 <details>
 
-Other services may work as well, but I have not fully tested them:
+Outros serviços também podem funcionar, embora não tenham sido totalmente testados:
 
-* <a href="https://homl.info/kaggle3/"><img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Open in Kaggle" /></a>
+* <a href="https://homl.info/kaggle3/"><img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Abrir no Kaggle" /></a>
 
-* <a href="https://mybinder.org/v2/gh/andreluizpedroso/handson-ml3/HEAD?filepath=%2Fnotebooks%2Findex.ipynb"><img src="https://mybinder.org/badge_logo.svg" alt="Launch binder" /></a>
+* <a href="https://mybinder.org/v2/gh/andreluizpedroso/handson-ml3/HEAD?filepath=%2Fnotebooks%2Findex.ipynb"><img src="https://mybinder.org/badge_logo.svg" alt="Abrir no Binder" /></a>
 
-* <a href="https://homl.info/deepnote3/"><img src="https://deepnote.com/buttons/launch-in-deepnote-small.svg" alt="Launch in Deepnote" /></a>
+* <a href="https://homl.info/deepnote3/"><img src="https://deepnote.com/buttons/launch-in-deepnote-small.svg" alt="Abrir no Deepnote" /></a>
 
 </details>
 
-### Just want to quickly look at some notebooks, without executing any code?
+### Quer apenas visualizar os notebooks sem executar o código?
 
-* <a href="https://nbviewer.jupyter.org/github/andreluizpedroso/handson-ml3/blob/main/notebooks/index.ipynb"><img src="https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg" alt="Render nbviewer" /></a>
+* <a href="https://nbviewer.jupyter.org/github/andreluizpedroso/handson-ml3/blob/main/notebooks/index.ipynb"><img src="https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg" alt="Visualizar no nbviewer" /></a>
 
-* [github.com's notebook viewer](https://github.com/andreluizpedroso/handson-ml3/blob/main/notebooks/index.ipynb) also works but it's not ideal: it's slower, the math equations are not always displayed correctly, and large notebooks often fail to open.
+* O [visualizador de notebooks do GitHub](https://github.com/andreluizpedroso/handson-ml3/blob/main/notebooks/index.ipynb) também funciona, mas não é a opção ideal: ele é mais lento, nem sempre exibe corretamente as equações matemáticas e costuma falhar ao abrir notebooks grandes.
 
-### Want to run this project using a Docker image?
-Read the [Docker instructions](docker/README.md).
+### Quer executar o projeto usando uma imagem Docker?
 
-### Want to install this project on your own machine?
+Leia as [instruções do Docker](docker/README.md).
 
-Start by installing [Anaconda](https://www.anaconda.com/products/distribution) (or [Miniconda](https://docs.conda.io/en/latest/miniconda.html)), [git](https://git-scm.com/downloads), and if you have a TensorFlow-compatible GPU, install the [GPU driver](https://www.nvidia.com/Download/index.aspx), as well as the appropriate version of CUDA and cuDNN (see TensorFlow's documentation for more details).
+### Quer instalar o projeto em sua máquina?
 
-Next, clone this project by opening a terminal and typing the following commands (do not type the first `$` signs on each line, they just indicate that these are terminal commands):
+Comece instalando o [Anaconda](https://www.anaconda.com/products/distribution/) (ou o [Miniconda](https://docs.conda.io/en/latest/miniconda.html)), o [Git](https://git-scm.com/downloads) e, caso tenha uma GPU compatível com o TensorFlow, instale o [driver da GPU](https://www.nvidia.com/Download/index.aspx), além das versões apropriadas do CUDA e do cuDNN. Consulte a documentação do TensorFlow para mais detalhes.
+
+Em seguida, clone este projeto abrindo um terminal e executando os comandos abaixo. Não digite os primeiros sinais de `$`; eles apenas representam o prompt do terminal:
 
     $ git clone https://github.com/andreluizpedroso/handson-ml3.git
     $ cd handson-ml3
 
-Next, run the following commands:
+Depois, execute:
 
     $ conda env create -f environment.yml
     $ conda activate homl3
     $ python -m ipykernel install --user --name=python3
 
-Finally, start Jupyter:
+Por fim, inicie o Jupyter:
 
     $ jupyter notebook notebooks/index.ipynb
 
-If you need further instructions, read the [detailed installation instructions](docs/INSTALL.md).
+Se precisar de mais orientações, leia as [instruções detalhadas de instalação](docs/INSTALL.md).
 
-# FAQ
+# Perguntas frequentes
 
-**Which Python version should I use?**
+**Qual versão do Python devo usar?**
 
-I recommend Python 3.10. If you follow the installation instructions above, that's the version you will get. Any version ≥3.7 should work as well.
+Recomenda-se o Python 3.10. Seguindo as instruções de instalação acima, essa será a versão utilizada. Qualquer versão igual ou superior à 3.7 também deve funcionar.
 
-**I'm getting an error when I call `load_housing_data()`**
+**Estou recebendo um erro ao chamar `load_housing_data()`**
 
-If you're getting an HTTP error, make sure you're running the exact same code as in the notebook (copy/paste it if needed). If the problem persists, please check your network configuration. If it's an SSL error, see the next question.
+Se o erro for relacionado a HTTP, confirme que está executando exatamente o mesmo código do notebook — copie e cole o trecho, se necessário. Caso o problema persista, verifique sua conexão de rede. Se for um erro de SSL, consulte a próxima pergunta.
 
-**I'm getting an SSL error on MacOSX**
+**Estou recebendo um erro de SSL no macOS**
 
-You probably need to install the SSL certificates (see this [StackOverflow question](https://stackoverflow.com/questions/27835619/urllib-and-ssl-certificate-verify-failed-error)). If you downloaded Python from the official website, then run `/Applications/Python\ 3.10/Install\ Certificates.command` in a terminal (change `3.10` to whatever version you installed). If you installed Python using MacPorts, run `sudo port install curl-ca-bundle` in a terminal.
+Provavelmente é necessário instalar os certificados SSL. Consulte esta [pergunta no Stack Overflow](https://stackoverflow.com/questions/27835619/urllib-and-ssl-certificate-verify-failed-error). Se você baixou o Python pelo site oficial, execute `/Applications/Python\ 3.10/Install\ Certificates.command` no terminal, substituindo `3.10` pela versão instalada. Caso tenha usado o MacPorts, execute `sudo port install curl-ca-bundle`.
 
-**I've installed this project locally. How do I update it to the latest version?**
+**Como atualizo este projeto para a versão mais recente?**
 
-See [docs/INSTALL.md](docs/INSTALL.md)
+Consulte [docs/INSTALL.md](docs/INSTALL.md).
 
-**How do I update my Python libraries to the latest versions, when using Anaconda?**
+**Como atualizo as bibliotecas Python para as versões mais recentes usando o Anaconda?**
 
-See [docs/INSTALL.md](docs/INSTALL.md)
+Consulte [docs/INSTALL.md](docs/INSTALL.md).
 
-## Contributors
-I would like to thank everyone [who contributed to this project](https://github.com/ageron/handson-ml3/graphs/contributors), either by providing useful feedback, filing issues or submitting Pull Requests. Special thanks go to Haesun Park and Ian Beauregard who reviewed every notebook and submitted many PRs, including help on some of the exercise solutions. Thanks as well to Steven Bunkley and Ziembla who created the `docker` directory, and to github user SuperYorio who helped on some exercise solutions. Thanks a lot to Victor Khaustov who submitted plenty of excellent PRs, fixing many errors. And lastly, thanks to Google ML Developer Programs team who supported this work by providing Google Cloud Credit.
+## Colaboradores
+
+Agradecemos a todas as pessoas que [contribuíram com o projeto original](https://github.com/ageron/handson-ml3/graphs/contributors), seja enviando feedback, abrindo issues ou submetendo Pull Requests. Um agradecimento especial a Haesun Park e Ian Beauregard, que revisaram todos os notebooks e enviaram diversos PRs, incluindo melhorias nas soluções dos exercícios. Agradecemos também a Steven Bunkley e Ziembla, responsáveis pelo diretório `docker`; ao usuário SuperYorio, pelas contribuições em algumas soluções; e a Victor Khaustov, pelas muitas correções enviadas. Por fim, agradecemos à equipe Google ML Developer Programs pelo apoio com créditos do Google Cloud.
