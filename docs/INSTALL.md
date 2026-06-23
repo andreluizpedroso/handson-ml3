@@ -6,10 +6,10 @@ To install this repository and run the Jupyter notebooks on your machine, you wi
 Next, clone this repository by opening a terminal and typing the following commands (do not type the first `$` on each line, it's just a convention to show that this is a terminal prompt, not something else like Python code):
 
     $ cd $HOME  # or any other development directory you prefer
-    $ git clone https://github.com/ageron/handson-ml3.git
+    $ git clone https://github.com/andreluizpedroso/handson-ml3.git
     $ cd handson-ml3
 
-If you do not want to install git, you can instead download [main.zip](https://github.com/ageron/handson-ml3/archive/main.zip), unzip it, rename the resulting directory to `handson-ml3` and move it to your development directory.
+If you do not want to install git, you can instead download [main.zip](https://github.com/andreluizpedroso/handson-ml3/archive/main.zip), unzip it, rename the resulting directory to `handson-ml3` and move it to your development directory.
 
 ## Install Anaconda
 Next, you will need Python 3 and a bunch of Python libraries. The simplest way to install these is to [download and install Anaconda](https://www.anaconda.com/distribution/), which is a great cross-platform Python distribution for scientific computing. It comes bundled with many scientific libraries, including NumPy, Pandas, Matplotlib, Scikit-Learn and much more, so it's quite a large installation. If you prefer a lighter weight Anaconda distribution, you can [install Miniconda](https://docs.conda.io/en/latest/miniconda.html), which contains the bare minimum to run the `conda` packaging tool. You should install the latest version of Anaconda (or Miniconda) available.
@@ -45,9 +45,9 @@ You're almost there! You just need to register the `homl3` conda environment to 
 
 And that's it! You can now start Jupyter like this:
 
-    $ jupyter notebook
+    $ jupyter notebook notebooks/index.ipynb
 
-This should open up your browser, and you should see Jupyter's tree view, with the contents of the current directory. If your browser does not open automatically, visit [localhost:8888](http://localhost:8888/tree). Click on `index.ipynb` to get started.
+This should open your browser directly on the notebook index. If your browser does not open automatically, visit [localhost:8888](http://localhost:8888/tree) and open `notebooks/index.ipynb`.
 
 Congrats! You are ready to learn Machine Learning, hands on!
 
@@ -56,7 +56,7 @@ When you're done with Jupyter, you can close it by typing Ctrl-C in the Terminal
     $ cd $HOME # or whatever development directory you chose earlier
     $ cd handson-ml3
     $ conda activate homl3
-    $ jupyter notebook
+    $ jupyter notebook notebooks/index.ipynb
 
 ## Update This Project and its Libraries
 I regularly update the notebooks to fix issues and add support for new libraries. So make sure you update this project regularly.
@@ -91,4 +91,4 @@ And recreate the environment:
 Lastly, we reactivate the environment and start Jupyter:
 
     $ conda activate homl3
-    $ jupyter notebook
+    $ jupyter notebook notebooks/index.ipynb

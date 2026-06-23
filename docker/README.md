@@ -49,7 +49,7 @@ $ docker-compose up
 
 Next, just point your browser to the URL printed on the screen (or go to <http://localhost:8888> if you enabled password authentication inside the `jupyter_notebook_config.py` file, before building the image) and you're ready to play with the book's code!
 
-The server runs in the directory containing the notebooks, and the changes you make from the browser will be persisted there.
+The server runs from the project root. Open the `notebooks` directory and then `index.ipynb`; changes made from the browser are persisted in the repository.
 
 You can close the server just by pressing `Ctrl-C` in the terminal window.
 
